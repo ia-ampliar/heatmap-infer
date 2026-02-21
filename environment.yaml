@@ -1,0 +1,31 @@
+name: tubular-tf-env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9
+  - pip
+
+  # Numérico
+  - numpy
+  - scipy
+
+  # OpenCV
+  - opencv
+
+  # Imagens
+  - pillow
+  - scikit-image
+  - matplotlib
+
+  # OpenSlide (biblioteca C + bindings)
+  - openslide
+  - openslide-python
+
+  # Utilidades
+  - tqdm
+
+  # TensorFlow (via pip para evitar conflito)
+  - pip:
+      - tensorflow==2.13.0
